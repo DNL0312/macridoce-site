@@ -3,9 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>macridoce | Bolos & Confeitaria</title>
-  
-  <!-- Fontes Oficiais do Manual da Marca: Fraunces e Montserrat -->
+  <title>macridoce | Bolos &amp; Confeitaria</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
@@ -119,6 +118,24 @@
       box-shadow: 0 8px 20px rgba(59, 32, 20, 0.14);
     }
 
+    .btn-flor {
+      position: relative;
+      flex: 0 0 24px;
+      width: 24px;
+      height: 24px;
+      overflow: hidden;
+      border-radius: 50%;
+    }
+
+    .btn-flor img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: auto;
+      height: 64px;
+      transform: translate(-50%, -50%);
+    }
+
     /* Botão Principal: Cacau Intenso + Rosa Antigo */
     .btn-primary {
       background-color: var(--cacau-intenso);
@@ -161,28 +178,38 @@
 
   <main class="container">
     <div class="logo-wrapper">
-      <!-- Substitua logo.png pelo arquivo do Selo Circular da macridoce -->
-      <img src="logo.png" alt="macridoce - Bolos & Confeitaria">
+      <img src="logo.png" alt="macridoce - Bolos &amp; Confeitaria">
     </div>
 
     <h1>macridoce</h1>
-    <p class="subtitle">Bolos & Confeitaria</p>
-    <p class="bio">Bolos de aniversário feitos com afeto e sabor de verdade em Petrolina – PE.</p>
+    <p class="subtitle">Bolos &amp; Confeitaria</p>
+    <p class="bio">Especialista em bolos de aniversário com acabamento em chantilly de bico. 
+      Recheios variados e compotas de fabricação própria. 
+      Atendendo em Petrolina–PE e região.</p>
 
     <div class="links">
-      <!-- Substitua o número 5587900000000 pelo seu WhatsApp real -->
-      <a href="https://api.whatsapp.com/send/?phone=5587981683625&text&type=phone_number&app_absent=0" target="_blank" class="btn btn-primary">
-        🎂 Encomendas & Orçamentos
+      <a
+        href="https://api.whatsapp.com/send/?phone=5587981683625&amp;text&amp;type=phone_number&amp;app_absent=0"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="btn btn-primary"
+      >
+        <span class="btn-flor">
+          <img src="iconflower.jpg" alt="">
+        </span>
+        <span>Encomendas &amp; Orçamentos</span>
       </a>
 
-      <a href="tabeladevalores.jpg" target="_blank" class="btn btn-secondary">
-        📖 Cardápio de Massas & Recheios
+      <a href="tabeladevalores.jpg" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+        <span class="btn-flor">
+          <img src="iconflower.jpg" alt="">
+        </span>
+        <span>Cardápio de Massas &amp; Recheios</span>
       </a>
-
     </div>
 
     <footer class="footer">
-      <p><a href="https://www.instagram.com/macridoce/" target="_blank">@macridoce</a> • Petrolina – PE</p>
+      <p><a href="https://www.instagram.com/macridoce/" target="_blank" rel="noopener noreferrer">@macridoce</a> • Petrolina – PE</p>
     </footer>
   </main>
 
